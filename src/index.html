@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="../src/style.css">
+    <script src="https://kit.fontawesome.com/485af02044.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="grid  sm:grid-cols-2 gap-40 sm:gap-10  px-10">
@@ -18,10 +20,10 @@
             </div>
             <div class="absolute mt-5 ">
                 <ul class="flex justify-between mb-5 text-slate-400 gap-2 text-[10px]">
-                    <li>March 9, 2023 </li>|
+                    <li class="">March 9, 2023 </li>|
                     <li>All</li>|
-                    <li>Announcements</li>|
-                    <li>Iconic show</li>    
+                    <li class="text-ellipsis overflow-hidden">Announcements</li>|
+                    <li class="text-ellipsis overflow-hidden whitespace-nowrap">Iconic show</li>    
                 </ul>
                 <h1 class="text-lg font-bold mb-5">Q1 Ionic Show Recap</h1>
                 <div class="flex items-center  gap-1 ">
@@ -38,20 +40,27 @@
    
     
 
-     <div class="relative">
+     <div class="relative ">
         <div class="overflow-hidden rounded-3xl transition duration-700 cursor-pointer">
             <div class=" relative hover:scale-110 transition duration-300 overflow-hidden">
                 <div class="w-full h-full  hover:bg-slate-200 hover:opacity-10 absolute"></div>
                 <img class="w-full" src="../assets/2.png" alt="">
             </div>
-            <div class="absolute mt-5 ">
-                <ul class="flex justify-between mb-5 text-slate-400 gap-2 text-[10px]">
-                    <li>March 6, 2023 </li>|
-                    <li>All</li>|
-                    <li>perspectives</li>|
-                    <li>Capacitor</li> |   
-                    <li>react</li>
-                </ul>
+            <div class="absolute mt-5  ">
+                <div  class="overflow-hidden w-56 gap-3 bg-slate-500  text-xs text-ellipsis whitespace-nowrap">
+                    <span class="inline-block  whitespace-nowrap">March 6, 2023</span>
+                    <ul class="inline-block  list-none ">
+                        <li class="inline-block list-bar">All</li>
+                        <li class="inline-block list-bar">perspectives</li>
+                    </ul>
+                    <ul class="inline-block  ">
+                        <li  class="inline-block" >Capacitor</li>  
+                        <li class="inline-block">react</li>
+                    </ul>
+                </div>
+            
+                    
+                
                 <h1 class="text-lg font-bold mb-5 max-w-[300px]">Building Native Mobile apps with React DOM</h1>
                 <div class="flex items-center  gap-1 ">
                     <div class="rounded-full w-6 h-6 overflow-hidden">
@@ -65,6 +74,22 @@
             </div>
         </div>
     </div>
+    </div>
+    <div class="mt-56 px-10 ">
+        <div class="flex flex-dir  text-left sm:flex-row gap-5 sm:justify-between items-center border px-5 py-10 rounded-xl ">
+            <div class="text-lg text-left md:text-2xl   font-bold"><span class="text-slate-400 md:text-slate-900"> Never miss an update.</span> <br>
+                Join our newsletter!
+            </div>
+            <div class="flex gap-2">
+                <div class="relative items-center flex">
+                    <div class="absolute left-2 text-slate-400">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <input type="text" class="pl-10 py-2 text-xs email-w w-36 border outline-none rounded-lg " placeholder="your@email.com">
+                </div>
+                <button class="bg-blue-600 hover:bg-blue-500  text-xs h-8 px-2 text-white font-bold rounded-lg">Notify me <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
